@@ -38,7 +38,8 @@ public class App {
         return in.nextLine();
     }
     private String finalOutput(String noun, String verb, String adj, String adv){
-        return "Do you " + verb + " your " + adj + " " + noun + " " + adv + "? That's hilarious!";
+        String output = String.format("Do you %s your %s %s %s? That's hilarious!",verb, adj, noun, adv);
+        return output;
     }
     private void displayOutput(String output){
         System.out.println(output);
